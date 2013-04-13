@@ -1,0 +1,80 @@
+name = MyCompany Mysite
+description = Foo Bar Baz
+version = 1.0-dev
+core = 7.x
+
+dependencies[] = auto_nodetitle
+dependencies[] = block
+dependencies[] = boxes
+dependencies[] = comment
+dependencies[] = context
+dependencies[] = contextual
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+dependencies[] = dblog
+dependencies[] = delta
+dependencies[] = delta_blocks
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = features
+dependencies[] = field
+dependencies[] = field_permissions
+dependencies[] = field_sql_storage
+dependencies[] = file
+dependencies[] = file_entity
+dependencies[] = filter
+dependencies[] = front_page
+dependencies[] = image
+dependencies[] = jquery_update
+dependencies[] = less
+dependencies[] = libraries
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = media
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = references
+dependencies[] = rules
+dependencies[] = rules_link
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = simplehtmldom
+dependencies[] = strongarm
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = token
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+dependencies[] = views
+dependencies[] = wysiwyg
+
+; UI for devel
+dependencies[] = context_ui
+dependencies[] = delta_ui
+dependencies[] = field_ui
+dependencies[] = migrate_ui
+dependencies[] = rules_admin
+dependencies[] = views_ui
+
+; Devel module
+dependencies[] = coder
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = masquerade
+dependencies[] = migrate
+dependencies[] = migrate_extras
+dependencies[] = omega_tools
+
+; Custom features
+
+
+; Custom modules
