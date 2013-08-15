@@ -1,32 +1,6 @@
 {
-    "repositories" : [
-        {
-            "type": "package",
-            "package": {
-                "name": "omissis/drupal-behat-extension",
-                "version" : "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/omissis/drupal-behat-extension.git",
-                    "reference": "master"
-                },
-                "autoload": {
-                    "psr-0": {
-                        "Drupal\\Driver": "src/",
-                        "Drupal\\Drupal": "src/",
-                        "Drupal\\Exception": "src/",
-                        "Drupal\\DrupalExtension": "src/"
-                    }
-                }
-            }
-        }
-    ],
     "require": {
-        "behat/behat": "2.4.*",
-        "behat/mink-extension": "*",
-        "behat/mink-selenium2-driver": "*",
-        "behat/mink-goutte-driver": "*",
-        "omissis/drupal-behat-extension" : "*"
+        "drupal/drupal-extension": "*"
     },
     "config": {
         "bin-dir": "bin/"
