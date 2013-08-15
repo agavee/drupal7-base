@@ -1,5 +1,6 @@
 {
     "require": {
+        "phing/phing": "2.5.0",
         "drupal/drupal-extension": "*"
     },
     "config": {
