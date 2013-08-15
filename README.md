@@ -20,9 +20,9 @@ Basically it contains:
 
 How to startup the local environment:
 
-* install phing(http://phing.info/)
-* install the phing drush task(http://drupal.org/project/phingdrushtask/)
+* install composer (http://getcomposer.org/)
 * replace all the instances of "mysite" and "mycompany" with the actual names of the site and company you need, both in file contents AND file names
 * configure the right parameters in the build.loc.properties file
 * start a sql database (MySQL, for instance)
-* let phing build the local environment by typing _phing loc-app -verbose_
+* initialize dependencies using ```composer install```
+* let phing build the local environment by typing ```bin/phing loc-app -verbos```
