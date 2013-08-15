@@ -22,23 +22,21 @@ default:
       drush:
         alias: ${drush.alias}
       region_map:
-        ## Site Theme (My Site) ##
-
-        #zone header
+        # Site Theme (My Site)
+        ## zone header
         region_header_first: '#region-header-first'
         region_header_second: '#region-header-second'
 
-        # zone menu
+        ## zone menu
         region_menu: '#region-menu'
         region_search: '#region-search'
 
-        # zone content
+        ## zone content
         region_content: "#region-content"
         region_issue_comment_form: "#block-commentform-commentform"
         region_right_sidebar: "#region-sidebar-second"
 
-        ## Admin Theme (Seven) ##
-
+        # Admin Theme (Seven)
         admin_region_branding: '#branding'
         admin_region_page: '#page'
         admin_region_content: '#content'
