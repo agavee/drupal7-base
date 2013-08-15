@@ -16,6 +16,7 @@ default:
       selenium2: ~
     Drupal\DrupalExtension\Extension:
       blackbox: ~
+      drupal_api: 'drush'
       drupal:
         drupal_root: .
       drush:
