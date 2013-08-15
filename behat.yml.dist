@@ -20,7 +20,6 @@ default:
       drupal:
         drupal_root: .
       drush:
-        root: .
         alias: ${drush.alias}
       region_map:
         ## Site Theme (My Site) ##
