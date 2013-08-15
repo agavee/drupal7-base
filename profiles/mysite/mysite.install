@@ -16,20 +16,22 @@ function mysite_install() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 
-  // Configure language
+  // Configure language.
   _mysite_configure_language();
 
-  // Configure themes
-  // _mysite_configure_themes();
+  // Configure themes.
+  _mysite_configure_themes();
 
-  // Set private file system
+  // Set private file system.
   variable_set('file_private_path', variable_get('file_public_path', 'sites/default/files') . '/private');
 }
 
+/**
+ * Setup language.
+ */
 function _mysite_configure_language() {
   // Add italian language.
-  locale_add_language('it', 'Italian', 'Italiano', LANGUAGE_LTR, '', '', true, true);
-  drupal_set_message(t('The language %language has been add and is now the default language.', array('%language' => 'italian')));
+  locale_add_language('it', 'Italian', 'Italiano', LANGUAGE_LTR, '', '', TRUE, TRUE);
 
   // Modification of weight for italian language.
   $result = db_update('languages')
@@ -38,18 +40,23 @@ function _mysite_configure_language() {
     ))
     ->condition('language', 'it', '=')
     ->execute();
+
+  drupal_set_message(t('The language %language has been add and is now the default language.', array('%language' => 'Italian')));
 }
 
+/**
+ * Setup themes.
+ */
 function _mysite_configure_themes() {
-  // Enable seven and set it as admin theme
+  // Enable seven and set it as admin theme.
   theme_enable(array('seven'));
-  variable_set('admin_theme', 'seven');
+  variable_set('admin_theme', 'rubik');
   variable_set('node_admin_theme', 1);
 
-  // Enable gestore_attivita and set it as default theme
-  theme_enable(array('gestore_attivita'));
-  variable_set('theme_default', 'gestore_attivita');
+  // Enable gestore_attivita and set it as default theme.
+  theme_enable(array('mysite'));
+  variable_set('theme_default', 'mysite');
 
-  // Disable all the other themes
+  // Disable all the other themes.
   theme_disable(array('bartik', 'garland', 'stark', 'omega'));
 }
